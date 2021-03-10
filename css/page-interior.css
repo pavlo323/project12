@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  background: #000;
+}
+@media (max-width: 1200px) {
+  body {
+    font-size: calc(10px + 2 * ((100vw - 320px) / 880));
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.wrapper__project {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__link_interior {
+  border-bottom: 1px solid #fff;
+}
+
+.header__link_index {
+  border-bottom: none;
+}
+
+.header__logo {
+  display: block;
+}
+
+.interior__row-carts {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px;
+}
+
+.interior__cart {
+  flex: 0 0 50%;
+  padding: 5px;
+}
+
+.interior__item {
+  width: 100%;
+  padding-top: 175px;
+  padding-bottom: 175px;
+  /*	padding: 175px 0px;*/
+  border-radius: 10px;
+}
+@media (max-width: 1200px) {
+  .interior__item {
+    padding-top: calc(100px + 75 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .interior__item {
+    padding-bottom: calc(100px + 75 * ((100vw - 320px) / 880));
+  }
+}
+
+.interior__item_1 {
+  background: url(../img/section-three/body-six/Rectangle1.jpg) no-repeat center/cover;
+}
+
+.interior__item_2 {
+  background: url(../img/section-three/body-six/Rectangle2.jpg) no-repeat center/cover;
+}

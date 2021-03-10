@@ -1,0 +1,327 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  background: #000;
+}
+@media (max-width: 1200px) {
+  body {
+    font-size: calc(10px + 2 * ((100vw - 320px) / 880));
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.wrapper__project {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__link_programs {
+  border-bottom: 1px solid #fff;
+}
+
+.header__link_index {
+  border-bottom: none;
+}
+
+.header__logo {
+  display: block;
+}
+
+.programs__row-carts {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px;
+  margin: -20px;
+}
+@media (max-width: 1200px) {
+  .programs__row-carts {
+    margin: calc(-5px + -15 * ((100vw - 320px) / 880));
+  }
+}
+
+.programs__cart {
+  flex: 0 0 50%;
+  padding: 20px;
+  /*padding: 20px;*/
+  display: inline-block;
+}
+@media (max-width: 1200px) {
+  .programs__cart {
+    padding: calc(5px + 15 * ((100vw - 320px) / 880));
+  }
+}
+
+.programs__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid #EB1A4C;
+  padding-top: 370px;
+  padding-bottom: 370px;
+  /*	padding: 175px 0px;*/
+  border-radius: 10px;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .programs__item {
+    padding-top: calc(120px + 250 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .programs__item {
+    padding-bottom: calc(120px + 250 * ((100vw - 320px) / 880));
+  }
+}
+
+.programs__item_1 {
+  background: url(../img/section-one/body-two/01.jpg) no-repeat center/cover;
+}
+
+.programs__item_2 {
+  background: url(../img/section-one/body-two/02.jpg) no-repeat center/cover;
+}
+
+.programs__item_3 {
+  background: url(../img/section-one/body-two/03.jpg) no-repeat center/cover;
+}
+
+.programs__item_4 {
+  background: url(../img/section-one/body-two/04.jpg) no-repeat center/cover;
+}
+
+.programs__item_5 {
+  background: url(../img/section-one/body-two/05.jpg) no-repeat center/cover;
+}
+
+.programs__item_6 {
+  background: url(../img/section-one/body-two/06.jpg) no-repeat center/cover;
+}
+
+.programs__information {
+  position: absolute;
+  bottom: calc(0% - 2px);
+  padding-left: 42px;
+  padding-right: 42px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  /*padding: 10px 20px;*/
+  border-radius: 0 0 10px 10px;
+  width: calc(100% + 4px);
+  background: #EB1A4C;
+}
+@media (max-width: 1200px) {
+  .programs__information {
+    padding-left: calc(13px + 29 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .programs__information {
+    padding-right: calc(13px + 29 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .programs__information {
+    padding-top: calc(7px + 17 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .programs__information {
+    padding-bottom: calc(7px + 17 * ((100vw - 320px) / 880));
+  }
+}
+
+.programs__row-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 11px;
+  /*margin-bottom: 11px;*/
+}
+@media (max-width: 1200px) {
+  .programs__row-one {
+    margin-bottom: calc(8px + 3 * ((100vw - 320px) / 880));
+  }
+}
+
+.programs__title {
+  min-height: 54px;
+  /*min-height: 36px;*/
+}
+@media (max-width: 1200px) {
+  .programs__title {
+    min-height: calc(24px + 30 * ((100vw - 320px) / 880));
+  }
+}
+
+.programs__title h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  /*font-size: 18px;*/
+  font-weight: 800;
+}
+@media (max-width: 1200px) {
+  .programs__title h3 {
+    font-size: calc(14px + 10 * ((100vw - 320px) / 880));
+  }
+}
+
+.programs__time {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 20px;
+}
+
+.programs__time {
+  font-family: "Inter", sans-serif;
+  line-height: 125%;
+  font-size: 18px;
+  /*font-size: 12px;*/
+  font-weight: 500;
+  white-space: nowrap;
+  color: #FFF;
+}
+@media (max-width: 1200px) {
+  .programs__time {
+    font-size: calc(10px + 8 * ((100vw - 320px) / 880));
+  }
+}
+
+.programs__subtitle {
+  margin-bottom: 11px;
+  min-height: 54px;
+  /*min-height: 36px;*/
+}
+@media (max-width: 1200px) {
+  .programs__subtitle {
+    min-height: calc(24px + 30 * ((100vw - 320px) / 880));
+  }
+}
+
+.programs__subtitle p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  /*font-size: 12px;*/
+  font-weight: 500;
+  color: #FFF;
+}
+@media (max-width: 1200px) {
+  .programs__subtitle p {
+    font-size: calc(10px + 8 * ((100vw - 320px) / 880));
+  }
+}
+
+.programs__price {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  /*ont-size: 24px;*/
+  line-height: 120.8333333333%;
+  font-weight: 800;
+  color: #FFF;
+}
+@media (max-width: 1200px) {
+  .programs__price {
+    font-size: calc(18px + 18 * ((100vw - 320px) / 880));
+  }
+}
+
+.programs__cart {
+  flex: 0 0 50%;
+  padding: 20px;
+  /*padding: 20px;*/
+  display: inline-block;
+}
+@media (max-width: 1200px) {
+  .programs__cart {
+    padding: calc(5px + 15 * ((100vw - 320px) / 880));
+  }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+  .programs__cart {
+    flex: 0 0 100%;
+  }
+}
